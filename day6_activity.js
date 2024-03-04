@@ -1,4 +1,8 @@
+
+const prompt = require('prompt-sync')();
 async function startTimer() {
+    //const startTimer = async() => {
+    //let time = prompt("Enter a time between 1 and 60 seconds:", "10");
     let time = parseInt(prompt("Enter a time between 1 and 60 seconds:", "10"), 10);
 
     // Check if the entered time is within the valid range
@@ -17,7 +21,7 @@ async function startTimer() {
         time--;
     }
 
-    alert("Time is up!");
+    console.log("Time is up!");
 }
 
 
