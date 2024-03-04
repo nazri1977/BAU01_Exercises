@@ -20,4 +20,5 @@ async function startTimer() {
     alert("Time is up!");
 }
 
-startTimer();
+
+startTimer();  
