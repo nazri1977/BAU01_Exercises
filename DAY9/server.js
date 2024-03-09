@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 //routes
-app.use("/api/posts", require("./src/route/post"))
+app.use("/api/reservations", require("./src/route/reservationRoutes"))
 
 
 //connecting to the DB
