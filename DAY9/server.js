@@ -8,8 +8,10 @@ const app = express();
 app.use(express.json());
 
 //routes
-app.use("/api/reservations", require("./src/route/reservationRoutes"))
+app.use("/api/reservations", require("./src/route/reservationRoutes"));
 
+
+app.use("/api/users", require("./src/route/user"))
 
 //connecting to the DB
 // Connecting to the Database

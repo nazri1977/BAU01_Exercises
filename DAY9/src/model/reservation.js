@@ -25,4 +25,9 @@ const reservationSchema = new mongoose.Schema({
 
 const Reservation = mongoose.model("Reservation", reservationSchema);
 
+// mongoose.connection.useDb('<database name>')
+// const db = mongoose.connection.useDb('School');
+// const User = db.model("Student", userSchema);
+
+// module.exports = User;
 module.exports = Reservation;
